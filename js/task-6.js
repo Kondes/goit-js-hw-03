@@ -1,5 +1,5 @@
-// Напиши функцию calculateTotalPrice(allProdcuts, productName), 
-// которая получает массив объектов и имя продукта (значение свойства name). 
+// Напиши функцию calculateTotalPrice(allProdcuts, productName),
+// которая получает массив объектов и имя продукта (значение свойства name).
 // Возвращает общую стоимость продукта (цена * количество).
 
 // Вызовы функции для проверки работоспособности твоей реализации.
@@ -11,14 +11,21 @@ const products = [
   { name: 'Захват', price: 1200, quantity: 2 },
 ];
 
-const calculateTotalPrice = function(allProducts, productName) {
-  for(const product of allProducts){
-      if(product.name !== productName) continue;
-      return product.price * product.quantity
+const calculateTotalPrice = function (allProducts, productName) {
+  for (const product of allProducts) {
+    if (product.name == productName) {
+      return product.price * product.quantity;
+    }
   }
 };
-
 
 console.log(calculateTotalPrice(products, 'Радар')); // 5200
 
 console.log(calculateTotalPrice(products, 'Дроид')); // 2800
+// const calculateTotalPrice = function(allProducts, productName) {
+//   for(const product of allProducts){
+//   if (product.name == productName) {
+//   return product.price * product.quantity
+//   }
+//   }
+//   };

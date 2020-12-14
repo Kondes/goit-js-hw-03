@@ -17,7 +17,7 @@
 // 3
 
 const countProps = function (obj) {
-  let count = Object.keys(obj).length;
+  const count = Object.keys(obj).length;
   return count;
 };
 console.log(countProps({}));

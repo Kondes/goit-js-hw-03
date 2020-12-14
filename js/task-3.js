@@ -6,7 +6,7 @@
 const findBestEmployee = function (employees) {
   let emp = '';
 
-  for (let key in employees) 
+  for (const key in employees) 
   if (!(employees[key] <= employees[emp]))
   emp = key;
 
